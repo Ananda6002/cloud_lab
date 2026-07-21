@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahyadri College of Engineering & Management</title>
+    <style>
+        :root {
+            --primary-color: #0c2340;
+            --secondary-color: #1d70b8;
+            --accent-color: #e5a93c;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --bg-light: #f8f9fa;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #f0f2f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 25px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+
+        .location {
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        /* Student Info Badge Styling */
+        .student-badge {
+            display: inline-flex;
+            gap: 20px;
+            background: var(--bg-light);
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: 1px solid #e1e4e8;
+            font-size: 1rem;
+            color: var(--primary-color);
+        }
+
+        .student-badge span strong {
+            color: var(--secondary-color);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-left: 5px solid var(--secondary-color);
+            padding-left: 15px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 25px;
+        }
+
+        .card {
+            background: var(--bg-light);
+            padding: 25px;
+            border-radius: 8px;
+            border-top: 4px solid var(--secondary-color);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .card.vision-card {
+            border-top-color: var(--accent-color);
+            grid-column: 1 / -1;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        p {
+            color: var(--text-dark);
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+
+        .list-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            background: var(--bg-light);
+            padding: 15px 20px;
+            border-radius: 6px;
+        }
+
+        .icon {
+            font-size: 1.4rem;
+            margin-right: 15px;
+            margin-top: -2px;
+        }
+
+        .peo-list {
+            list-style: none;
+        }
+
+        .peo-list .list-item {
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .mission-list {
+            list-style: none;
+        }
+
+        .mission-list .list-item {
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .overview-text {
+            background: var(--bg-light);
+            padding: 25px;
+            border-radius: 8px;
+            font-size: 1.05rem;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .container { padding: 20px; }
+            h1 { font-size: 1.8rem; }
+            .section-title { font-size: 1.4rem; }
+            .student-badge { flex-direction: column; gap: 5px; border-radius: 10px; width: 100%; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- College Header with Student Details -->
+        <header>
+            <h1>Sahyadri College of Engineering & Management</h1>
+            <div class="location">Mangalore</div>
+            <div class="student-badge">
+                <span><strong>Name:</strong> Ananda</span>
+                <span><strong>USN:</strong> 4SF23CS018</span>
+            </div>
+        </header>
+
+        <!-- Institutional Framework Section -->
+        <section>
+            <h2 class="section-title">College Institute Framework</h2>
+            <div class="grid">
+                <div class="card vision-card">
+                    <h3>Our Vision</h3>
+                    <p>To be a premier institution in Technology and Management by fostering excellence in education, innovation, incubation and values to inspire and empower the young minds.</p>
+                </div>
+            </div>
+
+            <h3>Program Educational Objectives (PEOs)</h3>
+            <ul class="peo-list">
+                <li class="list-item">
+                    <span class="icon">🎯</span>
+                    <span>Acquire teamwork, critical thinking, problem-solving skills and achieve leadership position in business organizations.</span>
+                </li>
+                <li class="list-item">
+                    <span class="icon">🎯</span>
+                    <span>Engage in lifelong learning for personal and professional growth.</span>
+                </li>
+                <li class="list-item">
+                    <span class="icon">🎯</span>
+                    <span>Be an entrepreneur by identifying the opportunities to develop sustainable business.</span>
+                </li>
+            </ul>
+
+            <h3>Our Mission</h3>
+            <ul class="mission-list">
+                <li class="list-item">
+                    <span class="icon">📖</span>
+                    <span>Creating an academic ambience to impart holistic education focusing on individual growth, integrity, ethical values and social responsibility.</span>
+                </li>
+                <li class="list-item">
+                    <span class="icon">📖</span>
+                    <span>Develop skill based learning through industry-institution interaction to enhance competency and promote entrepreneurship.</span>
+                </li>
+                <li class="list-item">
+                    <span class="icon">📖</span>
+                    <span>Fostering innovation and creativity through competitive environment with state-of-the-art infrastructure.</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Department Framework Section -->
+        <section>
+            <h2 class="section-title">Department of Computer Science & Engineering</h2>
+            
+            <div class="grid">
+                <div class="card vision-card">
+                    <h3>Our Vision</h3>
+                    <p>To be a globally recognized center for imparting quality technical education through innovative research and incubation with moral values in the field of computer science and engineering.</p>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 25px;">
+                <h3>Department Overview</h3>
+                <p class="overview-text">The Department of Computer Science & Engineering was started in the year 2007 with a student intake of 60 to cater to the needs of software industries. Further, the intake was increased to 120 in the year 2009 and subsequently to 180, and 240 in the year 2014 and 2022 respectively. The Program Computer Science & Engineering is also accredited by the National Board of Accreditation (NBA) for a period of 3 years up to 2026.</p>
+            </div>
+
+            <h3>Our Mission</h3>
+            <ul class="mission-list">
+                <li class="list-item">
+                    <span class="icon">📖</span>
+                    <span>Fostering effective education through internal collaboration with industries to address societal demands.</span>
+                </li>
+                <li class="list-item">
+                    <span class="icon">📖</span>
+                    <span>Empowering professionals with strong ethical values and leadership abilities.</span>
+                </li>
+                <li class="list-item">
+                    <span class="icon">📖</span>
+                    <span>Developing research and entrepreneurship culture in students and faculty to cultivate lifelong learning.</span>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>
